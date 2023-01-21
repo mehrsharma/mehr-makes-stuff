@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { Button } from '@mui/material';
 import styled from '@emotion/styled'
 
@@ -10,8 +9,6 @@ export const TypographyTheme = {
             fontFamily: [
                 'Kooltura',
             ].join(','),
-            // fontWeight: "800",
-            // fontStyle: "italic",
         },
         h2: {
             fontSize: "7rem",
@@ -23,23 +20,23 @@ export const TypographyTheme = {
         h3: {
             fontSize: "4rem",
             fontFamily: [
-                'Roboto',
+                'RobotoLight',
             ].join(','),
-            fontWeight: "400",
+            fontWeight: "300",
         },
         h4: {
             fontSize: "2rem",
             fontFamily: [
-                'Roboto',
+                'RobotoThin',
             ].join(','),
-            fontWeight: "300",
+            fontWeight: "100",
         },
         h5: {
             fontSize: "1rem",
             fontFamily: [
-                'Roboto',
+                'RobotoThin',
             ].join(','),
-            fontWeight: "300",
+            fontWeight: "100",
         },
     },
 };

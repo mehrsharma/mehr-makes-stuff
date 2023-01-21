@@ -1,15 +1,17 @@
-import * as React from 'react';
-import { useEffect, useState, useRef } from 'react';
-import { Box, Button, Container, Typography } from '@mui/material';
+import { useEffect, useState } from 'react';
+
 import { ThemeProvider } from '@emotion/react';
 import styled from '@emotion/styled'
-import { Colors } from '../components/styles-and-constants';
-import { StyledButton, TypographyTheme } from '../components/styles-and-constants';
+
+import { Container, Typography } from '@mui/material';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
+
 import { UseWindowDimensions } from '../components/window-resize-handler';
+import { Colors } from '../components/styles-and-constants';
+import { TypographyTheme } from '../components/styles-and-constants';
+
 import { GridLoader } from 'react-spinners';
-import Tooltip, { TooltipProps, tooltipClasses } from '@mui/material/Tooltip';
 
 
 function srcset(image: string, size: number, rows = 1, cols = 1) {

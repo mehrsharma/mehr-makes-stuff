@@ -1,9 +1,9 @@
-import * as React from 'react';
-import { Box, Button, Container, Typography } from '@mui/material';
+import { Container, Typography } from '@mui/material';
 import { ThemeProvider } from '@emotion/react';
-import styled from '@emotion/styled'
+
 import { Colors } from '../components/styles-and-constants';
-import { StyledButton, TypographyTheme } from '../components/styles-and-constants';
+import { TypographyTheme } from '../components/styles-and-constants';
+
 import { Link } from 'react-scroll'
 
 const linkStyle = {
