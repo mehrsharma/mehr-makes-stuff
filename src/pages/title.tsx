@@ -52,7 +52,8 @@ export default function Title() {
       textAlign: 'center',
       position: 'absolute',
       top: '50%',
-      transform: 'translate(0, -50%)'
+      transform: 'translate(0, -50%)',
+      zIndex: 3
       }}>
 
       <ThemeProvider theme = {TypographyTheme}>
