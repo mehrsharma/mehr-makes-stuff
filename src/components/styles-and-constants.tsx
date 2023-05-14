@@ -53,6 +53,6 @@ export const Colors = {
     lightGrey: "#D3D3D3",
     lightGreen: "#b3cf99",
     darkGreen: "#4b6043",
-    beige: "#FFFAF0",
+    beige: "#E5DECA",
     white: "#FFFFFF"
 }

@@ -14,7 +14,7 @@ import { Colors } from './components/styles-and-constants';
 import fish from './images/fish.svg';
 import background from './images/background.svg';
 import backgroundG from './images/background-gray.svg';
-import gradient from './images/gradient.png';
+// import gradient from './images/hello4.jpg';
 import Circles from './components/circles';
 
 const root = ReactDOM.createRoot(
@@ -29,7 +29,7 @@ root.render(
       height: "95vh",
       width: "100%",
       maxWidth: "100%",
-      backgroundImage:`url(${gradient})`,
+      // backgroundImage:`url(${gradient})`,
       backgroundSize: "cover",
       backgroundRepeat: "no-repeat",
       backgroundPosition: "center",
@@ -41,7 +41,7 @@ root.render(
       left: 0,
       width: "100%",
       height: "100%",
-      background: "linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1))",
+      // background: "linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1))",
       zIndex: 2,
     }}/>
     {/* <div style= {{

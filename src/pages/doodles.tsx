@@ -47,10 +47,10 @@ export default function Doodles() {
     Array(itemData.length).fill(false)
 );
   return (
-    <Container component="div" sx={{ display: "flex", justifyContent: "left", backgroundColor: "#FFFFFF", padding: "20px", flexDirection: "column"}} maxWidth = {false} id="doodles">
+    <Container component="div" sx={{ display: "flex", justifyContent: "left", backgroundColor: Colors.white, padding: "20px", flexDirection: "column"}} maxWidth = {false} id="doodles">
       <ThemeProvider theme = {TypographyTheme}>
         <Typography variant="h3" color={Colors.darkGrey}> doodles </Typography>
-        <Typography variant="h4" color={Colors.darkGrey}> mediums include gel pen, digital (using notability), and acrylic paint.</Typography>
+        {/* <Typography variant="h4" color={Colors.darkGrey}> Mediums include gel pen, digital (using notability), and acrylic paint.</Typography> */}
       </ThemeProvider>
       <ImageList
         sx={{ paddingLeft: "12%", paddingRight: "12%"}}
