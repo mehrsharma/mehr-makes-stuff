@@ -13,6 +13,8 @@ import { TypographyTheme } from '../components/styles-and-constants';
 
 import { GridLoader } from 'react-spinners';
 
+import LazyLoad from 'react-lazyload';
+
 
 function srcset(image: string, size: number, rows = 1, cols = 1) {
     return {
@@ -52,6 +54,7 @@ export default function Doodles() {
         <Typography variant="h3" color={Colors.darkGrey}> doodles </Typography>
         {/* <Typography variant="h4" color={Colors.darkGrey}> Mediums include gel pen, digital (using notability), and acrylic paint.</Typography> */}
       </ThemeProvider>
+      <LazyLoad offset={100}>
       <ImageList
         sx={{ paddingLeft: "12%", paddingRight: "12%"}}
         variant="quilted"
@@ -64,18 +67,21 @@ export default function Doodles() {
                     loading={isLoading[index]}
                 />
             {isLoading[index] ? null : (
-                    <img
-                    {...srcset(item.img, 121, item.rows, item.cols)}
-                    alt={item.title}
-                    onLoad={() => setIsLoading(prev => {
-                        prev[index] = false;
-                        return prev;
-                    })}
-                />
+                
+                      <img
+                      {...srcset(item.img, 121, item.rows, item.cols)}
+                      alt={item.title}
+                      onLoad={() => setIsLoading(prev => {
+                          prev[index] = false;
+                          return prev;
+                      })}
+                  />
+                
                 )}
             </StyledImageListItem>
         ))}
       </ImageList>
+      </LazyLoad>
     </Container>
   );
 }
