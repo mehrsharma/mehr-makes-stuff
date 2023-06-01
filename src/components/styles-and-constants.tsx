@@ -51,7 +51,7 @@ export const StyledButton = styled(Button)`
 export const Colors = {
     darkGrey: "#4C4E52",
     lightGrey: "#D3D3D3",
-    lightGreen: "#b3cf99",
+    lightGreen: "#dbe2d6",
     darkGreen: "#4b6043",
     beige: "#E5DECA",
     white: "#FFFFFF"
